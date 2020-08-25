@@ -28,6 +28,6 @@
             </li>
           </ul>
           {% include "blog/snippets/search_form.html" %}
-          <div class="ml-3 btn btn-secondary"><a class="text-white" href="http://127.0.0.1:8000/contact/">Contact</a></div>
+          <div class="ml-3 btn btn-secondary"><a class="text-white" href="{% url 'blog:contact_form' %}">Contact</a></div>
         </div>
       </nav>
