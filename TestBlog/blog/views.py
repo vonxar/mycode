@@ -23,7 +23,10 @@ class PostDetailView(DetailView):
             raise Http404
         return obj
 
-
+class HomeView(ListView):
+    model = Post
+    template_name = 'blog/home.html'
+    
 class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'

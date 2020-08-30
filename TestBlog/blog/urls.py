@@ -16,6 +16,7 @@ from blog.views import (
     reply_remove,
     ContactFormView,
     ContactResultView,
+    HomeView,
 )
 
 app_name = 'blog'
@@ -34,4 +35,5 @@ urlpatterns = [
     path('reply/<int:pk>/remove/', reply_remove, name='reply_remove'),
     path('contact/', ContactFormView.as_view(), name='contact_form'),
     path('contact/result/', ContactResultView.as_view(), name='contact_result'),
+    path('home',HomeView.as_view(), name='home'),
 ]
