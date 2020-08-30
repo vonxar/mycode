@@ -1,35 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+<div class= "midashi">
+<img src="static/blog/images/background.jpg" alt="表示できません" id="image">
+<h1>素材にこだわる<br><strong>「家具作り」</strong></h1>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
         {% block nav %}
-              <a class="navbar-brand" href="/">浅川の家具屋</a>
+              <img src="static/img/logo.png" id="logo">
+              <a class="navbar-brand" href="/">浅川の<br>家具屋</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">会社概要</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">リンク</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      色々
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">何か</a>
-                      <a class="dropdown-item" href="#">何か</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">何か</a>
-                    </div>
+                    <a class="nav-link" href="#">コンセプト</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#">いらない</a>
+                    <a class="nav-link" href="#">サービス</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">製作物<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">技術者</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">お客さまの声</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">よくある質問</a>
                   </li>
                 </ul>
-                {% include "blog/snippets/search_form.html" %}
-                <div class="ml-3 btn btn-secondary"><a class="text-white" href="{% url 'blog:contact_form' %}">Contact</a></div>
               </div>
         {% endblock %}
       </nav>

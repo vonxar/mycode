@@ -7,38 +7,42 @@
 {% include "base/nav.html" %}
 {% endblock %}
 
-<a class="navbar-brand" href="/">家具</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">リンク</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                色々
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">何か</a>
-                <a class="dropdown-item" href="#">何か</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">何か</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">いらない</a>
-            </li>
-          </ul>
-          {% include "blog/snippets/search_form.html" %}
-          <div class="ml-3 btn btn-secondary"><a class="text-white" href="{% url 'blog:contact_form' %}">Contact</a></div>
-        </div>
-
 {% block content %}
-<h1>ya hello</h1>
+<main>
+  <div class="company">
+    <p>会社概要</p>
+  </div>
+  <div class="concept">
+    <p>コンセプト</p>
+  </div>
+  <div class="achievement">
+    <p>製作物</p>
+      <img src="static/blog/images/kag.JPG" alt="表示できません" id="kag_image">
+  </div>  
+  <div class="engineer">
+    <p>技術者</p>
+  </div>
+  <div class="voice">
+    <p>お客様の声</p>
+  </div>
+  <div class="questions">
+    <p>よくある質問</p>
+  </div>
+  <div class="access">
+    <p>地図</p>
+  </div>
+</main>
+<footer>
+    <p>浅川の家具屋</p>
+    <p>TEL 0263-64-4298<br>
+    〒399-7411<br>
+    長野県松本市中川8076-1</p>
+
+    <ul class="snsbtniti">
+<li><a href="TwitterのプロフィールURL" class="flowbtn5 fl_tw1"
+><i class="fab fa-twitter"></i><div>Twitter</div></a></li>
+<li><a href="インスタのプロフィールURL" class="flowbtn5 insta_btn5"><i class="fab fa-instagram"></i><div>Instagram</div></a></li>
+<li><a href="FacebookページのURL" class="flowbtn5 fl_fb1"><i class="fab fa-facebook-f"></i><div>Facebook</div></a></li>
+<li><a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn5 fl_li1"><i class="fab fa-line"></i><div>LINE＠</div></a></li>
+</footer>
 {% endblock %}
